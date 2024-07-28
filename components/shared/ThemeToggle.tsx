@@ -31,12 +31,12 @@ const ThemeToggle = () => {
       {!isLight ? (
         <Sun
           onClick={enableLightMode}
-          className="hover:rotate-45 transition ease-in-out"
+          className="stroke-white transition ease-in-out hover:rotate-45"
         />
       ) : (
         <Moon
           onClick={enableDarkMode}
-          className="hover:rotate-45 transition ease-in-out"
+          className="transition ease-in-out hover:rotate-45 max-sm:stroke-white"
         />
       )}
     </Toggle>

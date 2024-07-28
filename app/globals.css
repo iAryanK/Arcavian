@@ -78,6 +78,11 @@
   ::-webkit-scrollbar-thumb:hover {
     background-color: white;
   }
+
+  .bg-clip-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 
 @layer base {
@@ -86,5 +91,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply select-none bg-gradient-to-r from-violet-800 to-indigo-300 bg-clip-text text-transparent dark:from-violet-600 dark:to-indigo-200;
   }
 }
