@@ -9,7 +9,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-between px-2">
+    <main className="relative flex min-h-screen flex-col items-center justify-between">
       <Hero />
       <About />
       <Services />
