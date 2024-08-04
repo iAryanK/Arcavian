@@ -12,11 +12,11 @@ export default function Home() {
     <main className="relative flex min-h-screen flex-col items-center justify-between">
       <Hero />
       <About />
-      {/* <Services /> */}
+      <Services />
       {/* <Process />
       <PreviousWorks />
-      <Testimonials />
-      <Contact /> */}
+      <Testimonials /> */}
+      <Contact />
       <FAQ />
     </main>
   );

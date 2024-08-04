@@ -16,13 +16,14 @@ const MobileNav = () => {
       <SheetTrigger>
         <Menu />
       </SheetTrigger>
+
       <SheetContent>
         <div className="relative flex h-full w-full flex-col items-center justify-center pb-10">
           <div>
             {navlinks.map((link, index) => (
               <SheetClose key={index} asChild>
                 <Link
-                  href={link.href}
+                  href={link.link}
                   className={cn(
                     "relative mr-5 flex items-center space-x-2 py-3",
                   )}
@@ -34,7 +35,6 @@ const MobileNav = () => {
               </SheetClose>
             ))}
           </div>
-
           <div className="absolute bottom-0 right-0">
             <SheetClose>
               <ThemeToggle />

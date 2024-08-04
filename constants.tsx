@@ -2,34 +2,10 @@ import { MessageCircle, Target, Telescope } from "lucide-react";
 import { cn } from "./lib/utils";
 
 export const navlinks = [
-  { name: "About Us", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Process", href: "#" },
-  { name: "Contact", href: "#contact" },
-];
-
-export const services = [
-  {
-    image: "/random.webp",
-    title: "Custom Application Development",
-    description:
-      "We design and develop tailored software solutions that meet the unique needs of your business, ensuring functionality, scalability, and user-friendliness.",
-    tags: "Promotes Global Reach",
-  },
-  {
-    image: "/random.webp",
-    title: "Small Business Solutions",
-    description:
-      "Tailored digital strategies and tools designed for small and medium-sized enterprises to compete effectively in the digital landscape.",
-    tags: "cost-effective solutions",
-  },
-  {
-    image: "/random.webp",
-    title: "Product Launch Landing Sites",
-    description:
-      "Our design team crafts intuitive and visually appealing interfaces that enhance user satisfaction and engagement across all digital platforms.",
-    tags: "Brand perception with design",
-  },
+  { name: "About Us", link: "#about" },
+  { name: "Services", link: "#services" },
+  { name: "Process", link: "#" },
+  { name: "Contact", link: "#contact" },
 ];
 
 export const CardItems = [
@@ -105,5 +81,42 @@ export const FAQItems = [
     title: "What is the pricing for your services?",
     description:
       "The pricing for our services varies depending on the scope and complexity of your project. We offer flexible pricing models, including fixed-price and time-and-materials approaches, to ensure we find the best solution for your budget. We're happy to provide a detailed quote based on your specific requirements.",
+  },
+];
+
+const Skeleton = () => (
+  <div className="dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex h-full min-h-[6rem] w-full flex-1 rounded-xl border border-transparent bg-neutral-100 [mask-image:radial-gradient(ellipse_at_center,white,transparent)] dark:border-white/[0.2] dark:bg-zinc-950 max-sm:aspect-video"></div>
+);
+
+export const serviceItems = [
+  {
+    header: <Skeleton />,
+    title: "Custom Application Development",
+    description:
+      "Get tailored software solutions that meet the unique needs of your business.",
+    tags: "Promotes Global Reach",
+    className: "md:col-span-2",
+  },
+  {
+    header: <Skeleton />,
+    title: "All Business Solutions",
+    description: "Available for big enterprise to startups to MSMEs.",
+    tags: "cost-effective solutions",
+    className: "md:col-span-1",
+  },
+  {
+    header: <Skeleton />,
+    title: "Available accross the Globe",
+    description: "No matter wherever you're, you can always reach to us.",
+    tags: "Brand perception with design",
+    className: "md:col-span-1",
+  },
+  {
+    header: <Skeleton />,
+    title: "Both website and app for your business",
+    description:
+      "You get website as well as app for mobile as well as PCs, according to your business needs.",
+    tags: "Brand perception with design",
+    className: "md:col-span-2",
   },
 ];

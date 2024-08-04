@@ -27,14 +27,14 @@ const FAQ = () => {
         </div>
 
         <div className="mx-auto max-w-4xl gap-y-5 px-2 pb-10 pt-5">
-          {FAQItems.map((item, index) => (
-            <Accordion type="single" key={index} collapsible>
-              <AccordionItem value={"item" + index}>
+          <Accordion type="single" collapsible>
+            {FAQItems.map((item, index) => (
+              <AccordionItem value={"item-" + index} key={index}>
                 <AccordionTrigger>{item.title}</AccordionTrigger>
                 <AccordionContent>{item.description}</AccordionContent>
               </AccordionItem>
-            </Accordion>
-          ))}
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

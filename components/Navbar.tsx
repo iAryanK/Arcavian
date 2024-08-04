@@ -9,7 +9,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <header className="mx-auto flex max-w-7xl items-center justify-between px-4 pt-2">
+    <header className="mx-auto flex max-w-7xl items-center justify-between px-4 pt-2 max-sm:pt-5">
       <Link
         href="/"
         className="flex items-center justify-center"
@@ -20,7 +20,7 @@ const Navbar = (props: Props) => {
           alt="Arcavian logo"
           width={100}
           height={100}
-          className="w-12 invert dark:invert-0"
+          className="w-12 invert dark:invert-0 max-sm:hidden"
         />
         <Image
           src={"/arcavian.png"}
@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
           {navlinks.map((link, index) => (
             <Link
               key={index}
-              href={link.href}
+              href={link.link}
               className="text-sm font-light underline-offset-4 hover:underline"
               prefetch={false}
             >
