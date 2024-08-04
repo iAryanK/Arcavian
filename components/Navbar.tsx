@@ -1,9 +1,9 @@
-import { navlinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import MobileNav from "./MobileNav";
 import ThemeToggle from "./shared/ThemeToggle";
+import { navlinks } from "@/constants";
 
 type Props = {};
 

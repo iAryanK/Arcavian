@@ -4,11 +4,11 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { navlinks } from "@/constants";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import ThemeToggle from "./shared/ThemeToggle";
+import { navlinks } from "@/constants";
 
 const MobileNav = () => {
   return (

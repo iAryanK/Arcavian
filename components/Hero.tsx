@@ -28,14 +28,15 @@ const Hero = (props: Props) => {
                 digital world
               </h2>
               <p className="max-w-[600px] pt-2 text-muted-foreground md:text-xl">
-                Arcavian empowers businesses to thrive in the digital era with
-                bespoke solutions tailored to your unique needs, ensuring a
-                seamless transition into the online world.
+                <strong>Arcavian</strong> empowers businesses to thrive in the
+                digital era with bespoke solutions tailored to <em>your</em>{" "}
+                unique needs, ensuring a seamless transition into the online
+                world.
               </p>
             </div>
             <div className="flex flex-col gap-2 sm:flex-row">
-              <Button className="max-sm:w-full">Contact Us</Button>
-              <Button variant={"outline"} className="max-sm:w-full">
+              <Button className="px-8 max-sm:w-full">Contact Us</Button>
+              <Button variant={"outline"} className="px-8 max-sm:w-full">
                 Learn More
               </Button>
             </div>
@@ -45,7 +46,7 @@ const Hero = (props: Props) => {
             width={1000}
             height={1000}
             alt="Hero"
-            className="animate-pulse-slow mx-auto aspect-video overflow-hidden rounded-xl object-cover invert max-sm:mt-5 sm:w-full lg:order-last lg:aspect-square"
+            className="mx-auto aspect-video animate-pulse-slow overflow-hidden rounded-xl object-cover invert dark:invert-0 max-sm:mt-5 sm:w-full lg:order-last lg:aspect-square"
           />
         </div>
       </div>
