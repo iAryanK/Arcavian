@@ -1,10 +1,18 @@
-import { MessageCircle, Target, Telescope } from "lucide-react";
-import { cn } from "./lib/utils";
+import {
+  Brain,
+  Code2,
+  MessageCircle,
+  Rocket,
+  Search,
+  TabletSmartphone,
+  Target,
+  Telescope,
+} from "lucide-react";
 
 export const navlinks = [
   { name: "About Us", link: "#about" },
   { name: "Services", link: "#services" },
-  { name: "Process", link: "#" },
+  { name: "Process", link: "#process" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -118,5 +126,38 @@ export const serviceItems = [
       "You get website as well as app for mobile as well as PCs, according to your business needs.",
     tags: "Brand perception with design",
     className: "md:col-span-2",
+  },
+];
+
+export const ProcessItems = [
+  {
+    title: "Discovery",
+    description:
+      "We start by understanding your business goals and requirements.",
+    icon: <Search />,
+  },
+  {
+    title: "Design",
+    description:
+      "We work closely with you to design a solution that meets your needs.",
+    icon: <Brain />,
+  },
+  {
+    title: "Development",
+    description:
+      "Our team of experts will develop a solution that drives growth and success.",
+    icon: <Code2 />,
+  },
+  {
+    title: "Testing",
+    description:
+      "We rigorously test the solution to ensure it meets your requirements.",
+    icon: <TabletSmartphone />,
+  },
+  {
+    title: "Launch",
+    description:
+      "We provide regular updates and support to ensure a seamless experience.",
+    icon: <Rocket />,
   },
 ];

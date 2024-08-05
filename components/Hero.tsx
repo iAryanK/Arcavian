@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import { FormModal } from "./Modal";
+import { MoveDown } from "lucide-react";
 
 type Props = {};
 
@@ -61,6 +62,12 @@ const Hero = (props: Props) => {
             alt="Hero"
             className="mx-auto aspect-video animate-pulse-slow overflow-hidden rounded-xl object-cover invert dark:invert-0 max-sm:mt-5 max-sm:hidden sm:w-full lg:order-last lg:aspect-square"
           />
+        </div>
+
+        <div className="flex items-center justify-center pt-3">
+          <div className="animate-bounce rounded-full border border-[rgba(255,255,255,0.10)] bg-gray-100 p-2 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] dark:bg-[rgba(40,40,40,0.70)]">
+            <MoveDown />
+          </div>
         </div>
       </div>
     </section>
