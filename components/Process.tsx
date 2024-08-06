@@ -45,7 +45,7 @@ const Processflow = () => {
     <Carousel className="mx-auto max-w-7xl px-5 pt-10">
       <CarouselContent className="-ml-1 pl-1">
         {ProcessItems.map((item, index) => (
-          <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className="pl-1 md:basis-1/2 xl:basis-1/3">
             <div className="flex items-center">
               <ProcessCard
                 title={item.title}

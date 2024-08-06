@@ -64,7 +64,7 @@ const Hero = (props: Props) => {
           />
         </div>
 
-        <div className="flex items-center justify-center pt-3">
+        <div className="flex items-center justify-center max-sm:pt-3">
           <div className="animate-bounce rounded-full border border-[rgba(255,255,255,0.10)] bg-gray-100 p-2 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] dark:bg-[rgba(40,40,40,0.70)]">
             <MoveDown />
           </div>
