@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import {
   Modal,
   ModalTrigger,
@@ -12,6 +14,17 @@ import { ContactForm } from "./ContactForm";
 import SendButton from "./SendButton";
 
 export function FormModal({ buttonText }: { buttonText: string }) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const initialvalues = {
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  };
+
+  const [data, setData] = useState(initialvalues);
+
   return (
     <div className="max-sm:w-full">
       <Modal>
@@ -23,11 +36,21 @@ export function FormModal({ buttonText }: { buttonText: string }) {
               Book your appointment with <Highlight>Arcavian</Highlight> now! 🕊️
             </h4>
 
-            <ContactForm />
+            <ContactForm
+              isSubmitting={isSubmitting}
+              setIsSubmitting={setIsSubmitting}
+              data={data}
+              setData={setData}
+            />
           </ModalContent>
 
           <ModalFooter>
-            <SendButton />
+            <SendButton
+              isSubmitting={isSubmitting}
+              setIsSubmitting={setIsSubmitting}
+              data={data}
+              setData={setData}
+            />
           </ModalFooter>
         </ModalBody>
       </Modal>

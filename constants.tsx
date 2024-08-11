@@ -60,7 +60,7 @@ const Skeleton = () => (
 
 export const serviceItems = [
   {
-    header: <Skeleton />,
+    header: "/cad.png",
     title: "Custom Application Development",
     description:
       "Get tailored software solutions that meet the unique needs of your business.",
@@ -68,21 +68,21 @@ export const serviceItems = [
     className: "md:col-span-2",
   },
   {
-    header: <Skeleton />,
+    header: "/abs.png",
     title: "All Business Solutions",
     description: "Available for big enterprise to startups to MSMEs.",
     tags: "cost-effective solutions",
     className: "md:col-span-1",
   },
   {
-    header: <Skeleton />,
+    header: "/atg.png",
     title: "Available accross the Globe",
     description: "No matter wherever you're, you can always reach to us.",
     tags: "Brand perception with design",
     className: "md:col-span-1",
   },
   {
-    header: <Skeleton />,
+    header: "/waa.png",
     title: "Both website and app for your business",
     description:
       "You get website as well as app for mobile as well as PCs, according to your business needs.",
@@ -233,11 +233,11 @@ export const FAQItems = [
   {
     title: "What technologies do you use?",
     description:
-      "At Arcavian, we stay up-to-date with the latest technologies and frameworks to ensure we deliver the most efficient and effective solutions. Our team is proficient in a wide range of technologies, including React, Node.js, .NET, and various cloud platforms like AWS and Azure.",
+      "At Arcavian, we stay up-to-date with the latest technologies and frameworks to ensure we deliver the most efficient and effective solutions. Our team is proficient in a wide range of technologies, including Next JS, React, Node.js, .PWA, etc.",
   },
   {
     title: "What is the pricing for your services?",
     description:
-      "The pricing for our services varies depending on the scope and complexity of your project. We offer flexible pricing models, including fixed-price and time-and-materials approaches, to ensure we find the best solution for your budget. We're happy to provide a detailed quote based on your specific requirements.",
+      "The pricing for our services varies depending on the scope and complexity of your project. We offer flexible pricing models, including fixed-price and time-and-materials approaches, to ensure we find the best solution for your budget.",
   },
 ];

@@ -11,14 +11,12 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Separator } from "./ui/separator";
 
 const Process = () => {
   return (
-    <section id="process" className="mt-10 w-full py-12">
+    <section id="process" className="mt-10 w-full pt-12">
       <div className="mx-auto max-w-7xl space-y-2 px-4 md:px-6">
         <Badge variant={"secondary"}>Our Process</Badge>
 

@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -28,7 +29,7 @@ export const BentoGridItem = ({
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  header?: React.ReactNode;
+  header?: any;
 }) => {
   return (
     <div
@@ -37,7 +38,15 @@ export const BentoGridItem = ({
         className,
       )}
     >
-      {header}
+      <div className="flex h-full items-center justify-center">
+        <Image
+          src={header}
+          alt={"header-image"}
+          width={200}
+          height={200}
+          className="rounded-xl"
+        />
+      </div>
       <div className="transition duration-200 group-hover/bento:translate-x-2">
         <div className="mb-2 mt-2 font-semibold text-neutral-600 dark:text-neutral-200">
           {title}
