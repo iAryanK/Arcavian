@@ -13,7 +13,7 @@ import { navlinks } from "@/constants";
 const MobileNav = () => {
   return (
     <Sheet>
-      <SheetTrigger>
+      <SheetTrigger asChild>
         <Menu />
       </SheetTrigger>
 

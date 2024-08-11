@@ -9,7 +9,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <header className="mx-auto flex max-w-7xl items-center justify-between px-4 pt-2 max-sm:pt-5">
+    <header className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 max-sm:pt-5">
       <Link
         href="/"
         className="flex items-center justify-center"

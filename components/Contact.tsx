@@ -5,7 +5,10 @@ import { Badge } from "./ui/badge";
 
 const Contact = () => {
   return (
-    <section id="contact" className="mt-10 w-full bg-zinc-100 dark:bg-zinc-900">
+    <section
+      id="contact"
+      className="mt-10 w-full scroll-mt-16 bg-zinc-100 dark:bg-zinc-900"
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
         <div className="space-y-2 py-20 md:px-6">
           <Badge variant={"secondary"}>Contact Us</Badge>

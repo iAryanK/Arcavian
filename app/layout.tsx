@@ -30,7 +30,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LoadingProvider>
-            <Navbar />
+            <div className="fixed z-50 w-full bg-background">
+              <Navbar />
+            </div>
             {children}
             <Footer />
             <Toaster />

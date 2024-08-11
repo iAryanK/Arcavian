@@ -9,7 +9,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="w-full pt-5">
+    <section className="mt-14 w-full pt-5">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4 py-10">
